@@ -1,0 +1,32 @@
+<view class="detail">
+  <view class="img">
+    <image src="{{obj.img}}" />
+  </view>
+  <view class="content">
+    <view class="title">{{obj.title}}</view>
+    <view class="text">简介：{{obj.miaoshu}}</view>
+  </view>
+  <!-- 更多推荐 -->
+  <view class="fw">
+    <view class="title">更多推荐</view>
+    <view class="conent">
+      <view
+        class="conent-item"
+        wx:for="{{dataList}}"
+        wx:key="*this"
+        bind:tap="goDetail"
+        data-obj="{{item}}"
+      >
+        <view class="img">
+          <image src="{{item.img}}" />
+        </view>
+        <view class="item-title">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="btn">
+    <view class="btn-item1" bind:tap="btn">加入书架</view>
+    <view class="btn-item2" bindtap="goYuedu">开始阅读</view>
+  </view>
+</view>
+

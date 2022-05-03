@@ -1,0 +1,21 @@
+<view class="conent">
+  <view
+    class="conent-item"
+    wx:for="{{dataList}}"
+    wx:key="*this"
+    bindtap="goDetail"
+    data-obj="{{item}}"
+  >
+    <view class="img">
+      <image src="{{item.img}}" />
+    </view>
+    <view class="item-title">{{item.title}}</view>
+  </view>
+  <view
+      class="find"
+      catchtap="find"
+      bindtap="goTxt"
+    >检索本地txt
+    </view>
+</view>
+

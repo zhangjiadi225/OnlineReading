@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/txt/txt",
+    "pages/bendi/bendi",
+    "pages/index/index",
+    "pages/zuce/zuce",
+    "pages/add/add",
+    "pages/my/my",
+    "pages/my_shujia/my_shujia",
+    "pages/lx/lx",
+    "pages/admin/admin",
+    "pages/text/text",
+    "pages/msg/msg",
+    "pages/search/search",
+    "pages/tuichu/tuichu",
+    "pages/set/set",
+    "pages/detail/detail",
+    "pages/fenlei/fenlei"
+  ],
+  "permission":{
+    "scope.userLocation":{
+      "desc":"请点击确定"
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#701C12",
+    "navigationBarTitleText": "在线书城",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor":"#FE0000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/icons/home.png",
+      "selectedIconPath": "images/icons/home_clone.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/fenlei/fenlei",
+      "iconPath": "images/icons/chuangjian.png",
+      "selectedIconPath": "images/icons/chuangjian_color.png",
+      "text": "分类"
+    }, {
+      "pagePath": "pages/my/my",
+      "iconPath": "images/icons/my.png",
+      "selectedIconPath": "images/icons/my_clone.png",
+      "text": "我的"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

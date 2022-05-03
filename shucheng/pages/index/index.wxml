@@ -1,0 +1,50 @@
+<view class="index">
+  <van-search
+    value="{{ value }}"
+    shape="round"
+    background="#701C12"
+    placeholder="书籍查询"
+    disabled
+    bind:tap="goSearch"
+  />
+  <view class="lunbo">
+    <swiper
+      circular
+      autoplay
+      interval="3600"
+      indicator-dots
+      indicator-active-color="#ffffff"
+    >
+      <swiper-item class="swiper_item">
+        <image src="../../images/1.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/2.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/3.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/4.jpg"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="fw">
+    <view class="title">热门图书</view>
+    <view class="conent">
+      <view
+        class="conent-item"
+        wx:for="{{dataList}}"
+        wx:key="*this"
+        bind:tap="goDetail"
+        data-obj="{{item}}"
+      >
+        <view class="img">
+          <image src="{{item.img}}" />
+        </view>
+        <view class="item-title">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+

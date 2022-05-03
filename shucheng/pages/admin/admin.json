@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-button":"@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index"
+  },
+  "navigationBarTitleText": "管理员用户登录",
+  "navigationBarBackgroundColor": "#701C12",
+  "navigationBarTextStyle":"white"
+}

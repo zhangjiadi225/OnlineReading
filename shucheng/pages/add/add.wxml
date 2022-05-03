@@ -1,0 +1,191 @@
+<view class="add">
+  <view class="top">
+    <view class="title">图书名称：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{title}}"
+        bindinput="getTitle"
+        placeholder="输入需求书本名称"
+      />
+    </view>
+    <view class="xq">
+      <textarea
+        value="{{miaoshu}}"
+        bindinput="getXq"
+        placeholder="输入需求详细信息"
+      ></textarea>
+    </view>
+  </view>
+  <view class="con">
+    <view class="title">书本类型：</view>
+    <van-radio-group value="{{ radio }}" bind:change="onChangeRadio">
+      <van-radio
+        checked-color="#701C12"
+        custom-class="r"
+        name="0"
+      >武打
+      </van-radio>
+      <van-radio
+        checked-color="#701C12"
+        custom-class="r"
+        name="1"
+      >推理
+      </van-radio>
+      <van-radio
+        checked-color="#701C12"
+        custom-class="r"
+        name="2"
+      >玄幻
+      </van-radio>
+      <van-radio
+        checked-color="#701C12"
+        custom-class="r"
+        name="3"
+      >穿越
+      </van-radio>
+      <van-radio
+        checked-color="#701C12"
+        custom-class="r"
+        name="4"
+      >仙侠
+      </van-radio>
+      <van-radio
+        checked-color="#701C12"
+        custom-class="r"
+        name="5"
+      >言情
+      </van-radio>
+      <van-radio
+        checked-color="#701C12"
+        custom-class="r"
+        name="6"
+      >其它
+      </van-radio>
+    </van-radio-group>
+  </view>
+  <view class="img">
+    <view class="title">上传图书封面:</view>
+    <view class="imgs" bindtap="changeBigImg">
+      <image src="{{img?img:'https://6261-ball-7gb7pdofad642bf6-1305237224.tcb.qcloud.la/ball/img/tupian.jpg'}}" />
+    </view>
+  </view>
+  <!-- <view class="top">
+    <view class="title">第一章：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{title1}}"
+        bindinput="getTitle1"
+        placeholder="输入第一章标题"
+      />
+    </view>
+    <view class="xq">
+      <textarea
+        value="{{msg1}}"
+        bindinput="getXq1"
+        placeholder="第一章内容"
+        maxlength="-1"
+      ></textarea>
+    </view>
+  </view>
+  <view class="top">
+    <view class="title">第二章：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{title2}}"
+        bindinput="getTitle2"
+        placeholder="输入第二章标题"
+      />
+    </view>
+    <view class="xq">
+      <textarea
+        value="{{msg2}}"
+        bindinput="getXq2"
+        placeholder="第二章内容"
+        maxlength="-1"
+      ></textarea>
+    </view>
+  </view>
+  <view class="top">
+    <view class="title">第三章：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{title3}}"
+        bindinput="getTitle3"
+        placeholder="输入第三章标题"
+      />
+    </view>
+    <view class="xq">
+      <textarea
+        value="{{msg3}}"
+        bindinput="getXq3"
+        placeholder="第三章内容"
+        maxlength="-1"
+      ></textarea>
+    </view>
+  </view>
+  <view class="top">
+    <view class="title">第四章：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{title4}}"
+        bindinput="getTitle4"
+        placeholder="输入第四章标题"
+      />
+    </view>
+    <view class="xq">
+      <textarea
+        value="{{msg4}}"
+        bindinput="getXq4"
+        placeholder="第四章内容"
+        maxlength="-1"
+      ></textarea>
+    </view>
+  </view>
+  <view class="top">
+    <view class="title">第五章：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{title5}}"
+        bindinput="getTitle5"
+        placeholder="输入第五章标题"
+      />
+    </view>
+    <view class="xq">
+      <textarea
+        value="{{msg5}}"
+        bindinput="getXq5"
+        placeholder="第五章内容"
+        maxlength="-1"
+      ></textarea>
+    </view>
+  </view>
+  <view class="top">
+    <view class="title">第六章：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{title6}}"
+        bindinput="getTitle6"
+        placeholder="输入第六章标题"
+      />
+    </view>
+    <view class="xq">
+      <textarea
+        value="{{msg6}}"
+        bindinput="getXq6"
+        placeholder="第六章内容"
+        maxlength="-1"
+      ></textarea>
+    </view>
+  </view> -->
+  <view class="btn">
+    <van-button type="primary" bind:tap="addBtn">提 交</van-button>
+  </view>
+</view>
+

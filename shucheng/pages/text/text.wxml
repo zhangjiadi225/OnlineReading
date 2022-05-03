@@ -1,0 +1,40 @@
+<view class="text">
+  <view class="title">目录</view>
+  <view
+    class="title"
+    data-index="0"
+    bind:tap="goMsg"
+  >第一章 {{text[0].title}}
+  </view>
+  <view
+    class="title"
+    data-index="1"
+    bind:tap="goMsg"
+  >第二章 {{text[1].title}}
+  </view>
+  <view
+    class="title"
+    data-index="2"
+    bind:tap="goMsg"
+  >第三章 {{text[2].title}}
+  </view>
+  <view
+    class="title"
+    data-index="3"
+    bind:tap="goMsg"
+  >第四章 {{text[3].title}}
+  </view>
+  <view
+    class="title"
+    data-index="4"
+    bind:tap="goMsg"
+  >第五章 {{text[4].title}}
+  </view>
+  <view
+    class="title"
+    data-index="5"
+    bind:tap="goMsg"
+  >第六章 {{text[5].title}}
+  </view>
+</view>
+

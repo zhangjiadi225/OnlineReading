@@ -1,0 +1,48 @@
+<view class="my">
+  <view class="banner">
+    <view class="login">
+      <view class="no_login">
+        <image src="../../images/logo.jpg" />
+      </view>
+      <view class="btn">{{name}}</view>
+    </view>
+  </view>
+  <view class="tab">
+    <view class="tab-item" bind:tap="goShujia">
+      <view class="left">
+        <image src="../../images/002.png" />
+        <view class="text">我的书架</view>
+      </view>
+      <image src="../../images/right.png" />
+    </view>
+    <view class="tab-item" bind:tap="goLx">
+      <view class="left">
+        <image src="../../images/003.png" />
+        <view class="text">个人信息</view>
+      </view>
+      <image src="../../images/right.png" />
+    </view>
+    <view class="tab-item" bind:tap="goAdd">
+      <view class="left">
+        <image src="../../images/001.png" />
+        <view class="text">需求录入</view>
+      </view>
+      <image src="../../images/right.png" />
+    </view>
+    <view class="tab-item" bind:tap="gobendi">
+      <view class="left">
+        <image src="../../images/005.png" />
+        <view class="text">本地书籍</view>
+      </view>
+      <image src="../../images/right.png" />
+    </view>
+    <view class="tab-item" bind:tap="gSet">
+      <view class="left">
+        <image src="../../images/004.png" />
+        <view class="text">设置</view>
+      </view>
+      <image src="../../images/right.png" />
+    </view>
+  </view>
+</view>
+

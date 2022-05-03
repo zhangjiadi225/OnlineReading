@@ -1,0 +1,47 @@
+<!--分类页面-->
+<view class="category">
+  <!--顶部搜索框-->
+  <van-search
+    value="{{ value }}"
+    shape="round"
+    background="#ffffff"
+    placeholder="请输入搜索关键词"
+    disabled
+    bind:tap="goSearch"
+  />
+  <view class="cates">
+    <!--左侧菜单区-->
+    <scroll-view class="left_menu_list" scroll-y>
+      <view
+        class="menu_item {{index===currentIndex?'active':''}}"
+        wx:for="{{leftMenuList}}"
+        wx:key="*this"
+        data-index="{{index}}"
+        bindtap="handleItemTap"
+      >{{item}}
+      </view>
+    </scroll-view>
+    <!--右侧内容区-->
+    <scroll-view
+      class="right_content"
+      scroll-y
+      scroll-top="{{scrollTop}}"
+    >
+      
+      <van-card
+        wx:for="{{rightConentList}}"
+        wx:key="*this"
+        title="{{item.title}}"
+        thumb="{{ item.img }}"
+        data-item="{{item}}"
+        desc="{{item.miaoshu}}"
+        bind:tap="goDetail"
+        title-class="a"
+        desc-class="aa"
+        custom-class="c"
+      />
+      <view class="text" wx:if="{{rightConentList.length==0}}">暂无相关图书~</view>
+    </scroll-view>
+  </view>
+</view>
+

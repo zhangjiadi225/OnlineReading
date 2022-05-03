@@ -1,0 +1,26 @@
+<view class="msg">
+  <view class="con">
+    <view class="title" wx:if="{{currentIndex==0}}">第一章 {{msg[currentIndex].title}}</view>
+    <view class="title" wx:if="{{currentIndex==1}}">第二章 {{msg[currentIndex].title}}</view>
+    <view class="title" wx:if="{{currentIndex==2}}">第三章 {{msg[currentIndex].title}}</view>
+    <view class="title" wx:if="{{currentIndex==3}}">第四章 {{msg[currentIndex].title}}</view>
+    <view class="title" wx:if="{{currentIndex==4}}">第五章 {{msg[currentIndex].title}}</view>
+    <view class="title" wx:if="{{currentIndex==5}}">第六章 {{msg[currentIndex].title}}</view>
+    <view class="msg">{{msg[currentIndex].msg}}</view>
+    <view class="tools">
+      <view
+        class="btn"
+        bind:tap="btn"
+        data-index="-1"
+      >上一章
+      </view>
+      <view
+        class="btn"
+        bind:tap="btn"
+        data-index="1"
+      >下一章
+      </view>
+    </view>
+  </view>
+</view>
+

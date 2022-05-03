@@ -1,0 +1,45 @@
+.conent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 690rpx;
+  margin-left: 30rpx;
+}
+.conent .conent-item {
+  width: 335rpx;
+  height: 500rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36rpx;
+}
+.conent .conent-item .img {
+  width: 260rpx;
+  height: 300rpx;
+}
+.conent .conent-item .img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.conent .conent-item .item-title {
+  line-height: 80rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.conent .del {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90rpx;
+  height: 50rpx;
+  font-size: 28rpx;
+  background-color: red;
+  color: white;
+  border-radius: 15rpx;
+}

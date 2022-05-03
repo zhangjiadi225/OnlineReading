@@ -1,0 +1,63 @@
+.index {
+  width: 750rpx;
+}
+.index .lunbo {
+  width: 750rpx;
+  height: 400rpx;
+}
+.index .lunbo swiper {
+  width: 670rpx;
+  height: 350rpx;
+  margin: 20rpx 40rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.index .lunbo swiper image {
+  width: 100%;
+  height: 100%;
+}
+.index .fw {
+  background-color: #EDEDED;
+  width: 750rpx;
+}
+.index .fw .title {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  margin-left: 30rpx;
+  font-weight: bold;
+}
+.index .fw .conent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 690rpx;
+  margin-left: 30rpx;
+}
+.index .fw .conent .conent-item {
+  width: 335rpx;
+  height: 500rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36rpx;
+}
+.index .fw .conent .conent-item .img {
+  width: 260rpx;
+  height: 360rpx;
+}
+.index .fw .conent .conent-item .img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.index .fw .conent .conent-item .item-title {
+  line-height: 80rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}

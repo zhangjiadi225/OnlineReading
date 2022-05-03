@@ -1,0 +1,109 @@
+.add {
+  width: 750rpx;
+  height: 100vh;
+  background-color: #F2F3F5;
+}
+.add .top {
+  width: 690rpx;
+  height: 380rpx;
+  background-color: white;
+  margin: 0 30rpx;
+  border-top: 25rpx solid #F2F3F5;
+  border-radius: 20rpx;
+}
+.add .top .title {
+  display: flex;
+  align-items: center;
+  width: 650rpx;
+  height: 100rpx;
+  margin-left: 15rpx;
+  border-bottom: 1px solid #F2F3F5;
+}
+.add .top .title-text {
+  display: flex;
+  align-items: center;
+  width: 650rpx;
+  height: 100rpx;
+  margin-left: 15rpx;
+  border-bottom: 1px solid #F2F3F5;
+}
+.add .top .title-text input {
+  width: 650rpx;
+}
+.add .top .xq {
+  width: 620rpx;
+  height: 160rpx;
+  padding: 15rpx;
+  margin-left: 15rpx;
+}
+.add .top .xq textarea {
+  width: 640rpx;
+  height: 140rpx;
+}
+.add .money {
+  width: 690rpx;
+  height: 240rpx;
+  background-color: white;
+  margin: 20rpx 30rpx;
+  border-radius: 20rpx;
+}
+.add .money .title,
+.add .money .num {
+  display: flex;
+  align-items: center;
+  width: 650rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  border-bottom: 1px solid #F2F3F5;
+}
+.add .img {
+  width: 750rpx;
+  background-color: #F2F3F5;
+}
+.add .img .title {
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+  height: 100rpx;
+  font-weight: bold;
+  margin-top: 60rpx;
+}
+.add .img .imgs {
+  width: 400rpx;
+  height: 400rpx;
+  margin-left: 30rpx;
+}
+.add .img .imgs image {
+  width: 400rpx;
+  height: 100%;
+}
+.add .img .imgs .img {
+  width: 100%;
+  height: 100%;
+}
+.add .btn {
+  display: flex;
+  justify-content: center;
+  margin: 66rpx 0;
+  width: 750rpx;
+}
+.add .btn .van-button {
+  width: 500rpx;
+  border-radius: 66rpx;
+}
+.add .con {
+  width: 660rpx;
+  height: 550rpx;
+  background-color: white;
+  padding-left: 30rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.add .con .title {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.add .con .r {
+  margin-top: 15rpx;
+}
